@@ -1,0 +1,8 @@
+{
+  "exec": {
+    "qnote": "Qnote/main.sh"
+  },
+  "dependencies": {
+    "yad": "*"
+  }
+}
