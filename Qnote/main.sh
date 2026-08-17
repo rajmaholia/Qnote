@@ -6,7 +6,7 @@ set -uo pipefail
 # Configuration
 ###############################################################################
 
-ROOT_QNOTE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_QNOTE_DIR="$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")"
 VAULT="$HOME/QuickCenter/Notes"
 STATE_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/qnote"
 STATE_FILE="$STATE_DIR/current_buffer"
