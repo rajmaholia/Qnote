@@ -34,7 +34,6 @@ singleton() {
 ### Execution Entry point
 main() {
   mkdir -p "$STATE_DIR"
-
   singleton
 
   if [[ ! -f "$STATE_FILE" ]]; then
@@ -83,7 +82,6 @@ main_event_loop() {
       ;;
 
     11)
-      echo "--"
       ## Create new note
       local name_new_file
       if name_new_file=$(create_new); then

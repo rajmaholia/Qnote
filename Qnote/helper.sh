@@ -1,3 +1,7 @@
+info() {
+  echo "$1" >&2
+}
+
 trim() {
   local s=${1:-}
 

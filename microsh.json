@@ -1,8 +1,14 @@
 {
+  "id": "qnote",
+  "name": "Qnote - A Quick Graphical note-taking app",
+  "version": "1.0.2",
+  "desciption": "It is a yad based quick gui note taking app. Setup keyboard sortcuts to make best out of it",
+
   "exec": {
     "qnote": "Qnote/main.sh"
   },
   "dependencies": {
-    "yad": "*"
+    "yad": "*",
+    "libnotify-bin": "*"
   }
 }
